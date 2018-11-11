@@ -1,0 +1,14 @@
+<div id="table">
+    <div id="header">
+        <span>Profile</span>
+        <span>
+            Employee Name <a href="#" class="sort-by" (click)="sortByName()"></a>
+        </span>
+        <span>
+            Job Title <a href="#" class="sort-by" (click)=" sortByTitle()"></a>
+        </span>
+    </div>
+    <div *ngFor="let emp of employees;" id="row">
+        <app-employee [name]="emp.name" [title]="emp.title" [profileImage]="emp.profileImage"></app-employee>
+    </div>
+</div>

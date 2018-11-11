@@ -1,0 +1,61 @@
+#table {
+    flex: auto;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: rgb(113, 162, 166);
+    color: #FFFFFF;
+    display: flex;
+
+    height: 60px;
+    align-items: center;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+#header>span {
+    min-width: 150px;
+    flex: 1;
+}
+
+a.sort-by {
+    padding-right: 32px;
+    position: relative;
+}
+
+a.sort-by:before,
+a.sort-by:after {
+    border: 8px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 10px;
+    top: 50%;
+    position: absolute;
+    width: 0;
+}
+
+a.sort-by:before {
+    border-bottom-color: #FFF;
+    margin-top: -18px;
+}
+
+a.sort-by:after {
+    border-top-color: #FFF;
+    margin-top: 2px;
+}
+
+#row:nth-child(even) {
+    background: rgb(218, 242, 228);
+}
+
+#row:nth-child(odd) {
+    background: rgb(238, 242, 219);
+}
