@@ -24,7 +24,7 @@ export class EmployeeService
 
     constructor(private http: HttpClient)
     {
-        this.endpoint = 'http://' + window.location.hostname + '/api/employees';
+        this.endpoint = window.location.protocol + '//' + window.location.hostname + '/api/employees';
     }
     public getAll < T > (): Observable < T >
     {
