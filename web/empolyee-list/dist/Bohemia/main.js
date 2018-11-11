@@ -253,7 +253,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var EmployeeService = /** @class */ (function () {
     function EmployeeService(http) {
         this.http = http;
-        this.endpoint = 'http://' + window.location.hostname + '/api/employees';
+        this.endpoint = window.location.protocol + '//' + window.location.hostname + '/api/employees';
     }
     EmployeeService.prototype.getAll = function () {
         return this.http.get(this.endpoint);
