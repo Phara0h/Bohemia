@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-direction: column;
+
+    mat-form-field {
+        display: block;
+    }
+
+    mat-card {
+        background-color: #333333;
+
+        .loadout {
+            background-color: #444444;
+            min-width: 500px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+            position: relative;
+
+        }
+    }
+
+    .weapon-buttons {
+        text-align: right;
+        float: right;
+        margin-top: 20px;
+
+        button {
+            margin: 5px;
+        }
+    }
+}

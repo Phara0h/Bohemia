@@ -44,6 +44,7 @@ app.use(function(req, res, next)
 });
 
 app.use('/list/', express.static('web/empolyee-list/dist/Bohemia'));
+app.use('/weapon/', express.static('web/weapons-loadout/dist/weapons-loadout'));
 
 app.use(function(err, req, res, next)
 {

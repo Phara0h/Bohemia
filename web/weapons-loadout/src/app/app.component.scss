@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    height: 100%;
+
+    div {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        app-weapon-dialog {
+            width: 700px;
+            -webkit-font-smoothing: antialiased;
+
+        }
+    }
+}

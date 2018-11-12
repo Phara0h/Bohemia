@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$weapons-app-primary: mat-palette($mat-green, 400, 200, 600);
+$weapons-app-accent: mat-palette($mat-light-green, 200, 100, 400);
+$weapons-app-warn: mat-palette($mat-red);
+$weapons-app-theme: mat-dark-theme($weapons-app-primary, $weapons-app-accent, $weapons-app-warn);
+
+@include angular-material-theme($weapons-app-theme);
+
+html,
+body {
+    height: 100%;
+    background-color: #222222;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

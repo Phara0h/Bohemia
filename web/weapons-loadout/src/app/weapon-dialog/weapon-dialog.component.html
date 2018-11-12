@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-form-field>
+        <mat-label>Weapon Configuration Name</mat-label>
+        <input matInput placeholder="Boom Stick" type="text" [(ngModel)]="config.name">
+    </mat-form-field>
+
+    <mat-card class="loadout">
+        <app-optics type="{{config.optics}}"></app-optics>
+        <app-rifle type="{{config.rifle}}"></app-rifle>
+        <app-ammunition type="{{config.ammunition}}"></app-ammunition>
+    </mat-card>
+
+    <div>
+        <app-weapon-configuration-selection #weaponConfigSelection [(weaponConfig)]="config"></app-weapon-configuration-selection>
+    </div>
+
+    <div class="weapon-buttons">
+        <button mat-raised-button color="primary" (click)="saveConfig(weaponConfigSelection)">Confirm</button>
+        <button mat-raised-button color="accent" (click)="weaponConfigSelection.resetConfig()">Cancel</button>
+    </div>
+</mat-card>

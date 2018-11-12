@@ -1,0 +1,36 @@
+:host {
+    display: block;
+    height: 100px;
+    min-width: 100px;
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+
+    div {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        img {
+            height: 100%;
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+    }
+
+    h3 {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 86px;
+        left: 3px;
+        color: #111111;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+
+}
